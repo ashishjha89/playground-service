@@ -1,7 +1,7 @@
 Playground Service
 ====================
 
-This is a playground Kotlin service with Spring Boot application.
+This is a playground Kotlin service with Spring Boot.
 
 ## Description of the service
 1. Greet the user
