@@ -24,11 +24,15 @@ jar {
 
 repositories {
     jcenter()
+    maven { url 'https://dl.bintray.com/konrad-kaminski/maven' }
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version" // Required for Kotlin integration
-    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-web:$spring_boot_version"
+    compile "org.springframework.boot:spring-boot-starter:$spring_boot_version"
+    compile 'org.springframework.kotlin:spring-kotlin-coroutine:0.3.7'
+    compile 'org.springframework.kotlin:spring-webmvc-kotlin-coroutine:0.3.7'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlin_coroutines"
     testCompile('org.springframework.boot:spring-boot-starter-test')
